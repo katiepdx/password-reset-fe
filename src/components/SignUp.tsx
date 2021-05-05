@@ -43,6 +43,7 @@ const SignUp = () => {
             name="email"
             placeholder='your@email.com'
             value={email}
+            required
             onChange={handleEmailChange} />
         </label>
 
@@ -52,6 +53,7 @@ const SignUp = () => {
             name="password"
             placeholder='password'
             value={password}
+            required
             onChange={handlePasswordChange} />
         </label>
 

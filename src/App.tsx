@@ -8,6 +8,8 @@ import {
   Switch,
 } from 'react-router-dom'
 import Login from './components/Login';
+import PasswordReset from './components/PasswordReset';
+import NewPassword from './components/NewPassword';
 
 function App() {
   return (
@@ -26,6 +28,14 @@ function App() {
             <Route
               exact path="/login"
               component={Login}
+            />
+            <Route
+              exact path="/password-reset"
+              component={PasswordReset}
+            />
+            <Route
+              path="/reset-password/:token"
+              component={NewPassword}
             />
           </Switch>
         </Router>

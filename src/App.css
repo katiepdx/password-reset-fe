@@ -50,3 +50,20 @@ button:hover {
   cursor: pointer;
 
 }
+
+.success-modal {
+  height: 30vh;
+  width: 50vw;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  background-color: whitesmoke;
+  border: 10px solid  rgb(37, 146, 83);
+  border-radius: 2rem;
+  margin: 2rem;
+  color:  rgb(37, 146, 83);
+}

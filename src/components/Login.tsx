@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { login } from '../utils/api-utils'
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -35,6 +35,7 @@ const Login = () => {
             name="email"
             placeholder='your@email.com'
             value={email}
+            required
             onChange={handleEmailChange} />
         </label>
 
@@ -44,11 +45,13 @@ const Login = () => {
             name="password"
             placeholder='password'
             value={password}
+            required
             onChange={handlePasswordChange} />
         </label>
 
         <button>Login</button>
       </form>
+      <Link to="/password-reset">Forgot Password</Link>
     </div>
   )
 }
